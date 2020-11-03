@@ -1,0 +1,5 @@
+<svg width="48" height="32" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.25" width="16" height="16" transform="matrix(-1 0 0 1 48 0)" fill="black"/>
+<rect opacity="0.25" width="16" height="16" transform="matrix(-1 0 0 1 32 16)" fill="black"/>
+<rect opacity="0.25" width="16" height="16" transform="matrix(-1 0 0 1 16 0)" fill="white"/>
+</svg>

@@ -1,0 +1,71 @@
+.btn {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 20px 32px;
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: $White;
+
+    @media screen and (max-width: $layoutDesktop + 'px') {
+        font-size: calc(16px + 2 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+        line-height: calc(20 / 18);
+    }
+    @media screen and (max-width: 450px) {
+        justify-content: center;
+    }
+    
+    &-blue {
+        background-color: $Blue2;
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            display: block;
+        }
+
+        &::before {
+            width: 16px;
+            height: 16px;
+            left: 0;
+            bottom: 0;
+            background: url(../img/icons/buttons/blueCubes1.svg) no-repeat;
+        }
+
+        &::after {
+            width: 48px;
+            height: 32px;
+            right: 0;
+            top: 0;
+            background: url(../img/icons/buttons/blueCubes2.svg) no-repeat;
+        }
+    }
+    
+    &-violet {
+        background-color: $Violet;
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            display: block;
+        }
+
+        &::before {
+            width: 16px;
+            height: 16px;
+            left: 0;
+            bottom: 0;
+            background: url(../img/icons/buttons/violetCubes1.svg) no-repeat;
+        }
+
+        &::after {
+            width: 48px;
+            height: 32px;
+            right: 0;
+            top: 0;
+            background: url(../img/icons/buttons/violetCubes2.svg) no-repeat;
+        }
+    }
+}
