@@ -1,0 +1,36 @@
+.main-menu {
+	flex: 0 1 398px;
+
+	@media screen and (max-width: 767px) {
+		margin: 17px 0 40px;
+	}
+
+	// .main-menu__list
+	&__list {
+		justify-content: space-between;
+	}
+
+	// .main-menu__item
+	&__item {
+		margin-right: 15px;
+		&:last-child {
+			margin-right: 0;
+		}
+
+		@media screen and (max-width: 991px) {
+			margin-right: 10px;
+		}
+		@media screen and (max-width: 767px) {
+			margin: 0px 0px 24px 0px;
+		}
+	}
+
+	// .main-menu__link
+	&__link {
+		font-size: 14px;
+		line-height: 18px;
+		color: $Black;
+		display: block;
+		white-space: nowrap;
+	}
+}

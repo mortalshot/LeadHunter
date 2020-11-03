@@ -61,4 +61,107 @@
             right: 7px;
         }
     }
+
+    &--menu {
+        z-index: 51;
+        background: rgba(11, 11, 11, 0.3);
+
+        .popup__body {
+            padding: 0;
+            justify-content: flex-start;
+        }
+
+        .menu-popup {
+            background-color: $White;
+            transform: translate(-100%, 0);
+            width: 100%;
+            max-width: 250px;
+            height: 100vh;
+            padding: 15px 22px;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                display: block;
+                width: 66px;
+                height: 44px;
+                background: url(../img/icons/menuCubes.svg) no-repeat;
+            }
+
+            @media screen and (max-width: 450px) {
+                max-width: 221px;
+            }
+
+            &__heading {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 -22px 25px;
+                padding: 0 22px 14px;
+                border-bottom: 1px solid $Lgrey;
+            }
+
+            &__logo {
+                margin: 0;
+                padding: 0;
+
+                .logo {
+                    &__text-wrapper {
+                        display: block;
+                    }
+
+                    &__img {
+                        flex: 0 0 19px;
+                        margin-right: 5px;
+                    }
+
+                    &__top {
+                        font-size: 16px;
+                        line-height: 20px;
+                        letter-spacing: 1.8px;
+
+                        @media screen and (max-width: $layoutDesktop + "px") {
+                            font-size: calc(
+                                9px + 7 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile}))
+                            );
+                            line-height: calc(20 / 16);
+                        }
+                    }
+                    &__bottom {
+                        font-size: 10px;
+                        line-height: 13px;
+                        letter-spacing: 0.4px;
+
+                        @media screen and (max-width: $layoutDesktop + "px") {
+                            font-size: calc(
+                                6px + 4 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile}))
+                            );
+                            line-height: calc(13 / 10);
+                        }
+                    }
+                }
+            }
+
+            .call-up {
+                @media screen and (max-width: 767px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 -16px;
+                }
+            }
+        }
+
+        .close-popup {
+            position: inherit;
+        }
+
+        &.open {
+            .menu-popup {
+                transform: translate(0, 0);
+            }
+        }
+    }
 }

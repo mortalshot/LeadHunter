@@ -1,0 +1,21 @@
+.firstscreen {
+	position: relative;
+
+	// .firstscreen__row
+	&__row {
+	}
+
+	// .firstscreen__content
+	&__content {
+	}
+
+	// .firstscreen__call
+	&__call {
+		position: absolute;
+		right: 16px;
+
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+	}
+}

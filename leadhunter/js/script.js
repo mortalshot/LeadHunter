@@ -1,3 +1,6 @@
+// libs
+
+// components
 function testWebP(callback) {
 
 	var webP = new Image();
@@ -17,46 +20,11 @@ testWebP(function (support) {
 	}
 });
 $(document).ready(function() {
-    $('.header__burger').click(function(event) {
+    $('.header__burger-wrapper').click(function(event) {
         $('.header__burger, .header__menu').toggleClass('active');
         $('body').toggleClass('lock');
     })
 })
-
-/*
-$(document).ready(function () {
-    $('.tabs-triggers__item').click(function (e) {
-        e.preventDefault();
-
-        var tabsid = $(this).closest('.tabs').attr("id");
-        $('#' + tabsid + ' ' + '.tabs-triggers__item').removeClass('tabs-triggers__item--active');
-        $('#' + tabsid + ' ' + '.tabs-content__item').removeClass('tabs-content__item--active');
-
-        $(this).addClass('tabs-triggers__item--active');
-        $($(this).attr('href')).addClass('tabs-content__item--active');
-    });
-
-    let tabsList = document.querySelectorAll('.tabs');
-    if (tabsList.length > 0) {
-        for (let i = 0; i < tabsList.length; i++) {
-            const element = tabsList[i];
-            let elementID = $(element).attr('id');
-            $("#" + elementID + " .tabs-triggers__item:first").click();
-        }
-    }
-});
-$(document).ready(function () {
-    $('.accordion__title').click(function (event) {
-
-        let accordionid = $(this).closest('.accordion').attr("id");
-
-        if ($('#' + accordionid).hasClass('accordion-one')) {
-            $('#' + accordionid + ' ' + '.accordion__title').not($(this)).removeClass('active');
-            $('#' + accordionid + ' ' + '.accordion__text').not($(this).next()).slideUp(300);
-        }
-        $(this).toggleClass('active').next().slideToggle(300);
-    });
-});
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll(".lock-padding");
@@ -114,7 +82,7 @@ function popupClose(popupActive, doUnlock = true) {
 }
 
 function bodyLock() {
-    const lockPaddingValue = window.innerWidth - document.querySelector('.site-content').offsetWidth + 'px'; //!обратить внимание на контейнер
+    const lockPaddingValue = window.innerWidth - document.querySelector('.site__main').offsetWidth + 'px'; //!обратить внимание на контейнер
 
     if (lockPadding.length > 0) {
         for (let index = 0; index < lockPadding.length; index++) {
@@ -184,36 +152,10 @@ document.addEventListener('keydown', function (e) {
             Element.prototype.msMatchesSelector;
     }
 })();
-$(document).ready(function () {
-    const navOffset = $('.site_header__bottom').offset().top;
-    $(window).scroll(function () {
-        const scrolled = $(this).scrollTop();
-
-        if (scrolled > navOffset) {
-            $('.site_wrap').addClass('nav-fixed');
-        } else if (scrolled < navOffset) {
-            $('.site_wrap').removeClass('nav-fixed');
-        }
-    });
+$(document).ready(function() {
+    $('.call-up__button').click(function(event) {
+        event.preventDefault();
+        $('.call-up__menu').toggleClass('active');
+        $('.call-up__submenu').slideToggle(300);
+    })
 })
-
-$(document).ready(function () {
-    mediaQueryMdMin = window.matchMedia('(min-width: 768px)');
-    
-    // mediaQueryMdMin
-    mediaQueryMdMin.addListener(handleTabletChange);
-    function handleTabletChange(e) {
-        if (e.matches) {
-
-        }
-
-        else {
-
-        }
-    }
-
-    if (mediaQueryMdMin.matches) {
-
-    }
-});
-*/

@@ -1,0 +1,61 @@
+.main {
+	background: url(../img/main/firstscreen/bg.png) no-repeat center/cover;
+	display: flex;
+	align-items: center;
+	padding: 50px 0;
+
+	@media screen and (min-width: 767px) {
+		min-height: 624px;
+	}
+	@media screen and (max-width: 575px) {
+		padding: 43px 0 22px;
+	}
+
+	&__container-fluid {
+		position: relative;
+		width: 100%;
+	}
+
+	// .main__container
+	&__container {
+		max-width: 1032px;
+		margin: 0 auto;
+	}
+
+	&__heading {
+		margin-bottom: 101px;
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 116px;
+		}
+	}
+
+	// .main__title
+	&__title {
+		margin-bottom: 12px;
+		max-width: 663px;
+		color: $White;
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 16px;
+		}
+	}
+
+	// .main__subtitle
+	&__subtitle {
+		font-size: 28px;
+		line-height: 36px;
+		color: $Violet;
+		max-width: 455px;
+
+		@media screen and (max-width: $layoutDesktop + 'px') {
+			font-size: calc(18px + 10 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+			line-height: calc(36 / 28);
+		}
+	}
+
+	// .main__actions
+	&__actions {
+		color: $White;
+	}
+}

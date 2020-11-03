@@ -30,6 +30,14 @@
 	background: url("../img/icons/call-up/phone.svg") center no-repeat;
 }
 
+.active {
+	.call-phone {
+		width: 16px;
+		height: 20px;
+		background: url("../img/icons/call-up/close.svg") center no-repeat;
+	}
+}
+
 .call-telegram {
 	display: inline-block;
 	vertical-align: middle;

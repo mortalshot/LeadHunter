@@ -1,0 +1,164 @@
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+
+	@media screen and (max-width: 767px) {
+		box-shadow: 3px 14px 34px rgba(0, 0, 0, 0.07);
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		z-index: 2;
+	}
+
+	&__container {
+		max-width: 1920px;
+		padding: 0;
+
+		@media screen and (min-width: 992px) {
+			padding: 0;
+		}
+	}
+
+	&__body {
+		display: flex;
+		align-items: center;
+		position: relative;
+		height: $size-header-height;
+
+		@media screen and (max-width: 767px) {
+			height: $size-header-height-mobile;
+		}
+	}
+
+	&__burger {
+		&-wrapper {
+			display: none;
+			z-index: 3;
+
+			@media screen and (max-width: 767px) {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100%;
+				width: 60px;
+				border-right: 1px solid $Lgrey;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			display: block;
+			position: relative;
+			width: 15px;
+			height: 12px;
+			transition: 0.3s ease all 0s;
+			padding: 7px 10px;
+
+			&::before,
+			&::after,
+			span {
+				content: "";
+				background-color: $Black;
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				left: 0;
+				transition: 0.3s ease all 0s;
+			}
+
+			&::before {
+				top: 0;
+			}
+
+			&::after {
+				bottom: 0;
+			}
+
+			span {
+				top: 6px;
+			}
+
+			&.active {
+				&::before {
+					transform: rotate(45deg);
+					top: 6px;
+				}
+
+				&::after {
+					transform: rotate(-45deg);
+					bottom: 6px;
+				}
+
+				span {
+					transform: scale(0);
+				}
+			}
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		flex: 1 1 auto;
+	}
+
+	&__menu {
+		z-index: 2;
+		position: relative;
+		flex: 0 1 748px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		position: relative;
+		z-index: 2;
+
+		@media screen and (max-width: 767px) {
+			display: block;
+		}
+	}
+
+	&__languages {
+		z-index: 2;
+		position: relative;
+	}
+
+	&__login {
+		z-index: 2;
+		display: block;
+		height: 100%;
+		width: 79px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-left: 1px solid $Lgrey;
+		margin-left: 27px;
+
+		@media screen and (max-width: 991px) {
+			margin-left: 10px;
+			width: 70px;
+		}
+		@media screen and (max-width: 767px) {
+			width: 60px;
+			margin-left: 24px;
+		}
+	}
+}

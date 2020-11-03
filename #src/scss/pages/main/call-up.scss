@@ -1,0 +1,36 @@
+.call-up {
+	// .call-up__menu
+	&__menu {
+	}
+
+	// .call-up__item
+	&__item {
+		list-style-type: none;
+
+		@media screen and (min-width: 767px) {
+			margin-bottom: 8px;
+		}
+		@media screen and (max-width: 767px) {
+			padding: 16px;
+		}
+	}
+
+	// .call-up__link
+	&__link {
+		display: block;
+		@media screen and (min-width: 767px) {
+			width: 54px;
+			height: 54px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: $White;
+			border-radius: 50%;
+		}
+	}
+
+	// .call-up__submenu
+	&__submenu {
+		display: none;
+	}
+}
