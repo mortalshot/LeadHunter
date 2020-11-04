@@ -125,6 +125,7 @@
 		position: relative;
 		margin-bottom: 18px;
 		padding-bottom: 81%;
+		display: block;
 
 		@media screen and (max-width: 450px) {
 			padding-bottom: 91%;
@@ -158,6 +159,8 @@
 	// .news__card-title
 	&__card-title {
 		margin-bottom: 18px;
+		display: block;
+		color: $Black;
 
 		@media screen and (max-width: 450px) {
 			margin-bottom: 16px;
