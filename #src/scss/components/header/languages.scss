@@ -25,6 +25,17 @@
 		padding: 6px 4.5px;
 		position: relative;
 		display: block;
+		transition: 0.3s ease all 0s;
+
+		@media screen and (min-width: 992px) {
+			&:hover {
+				color: $Grey;
+
+				&::before {
+					background-color: $Grey;
+				}
+			}
+		}
 
 		&::before {
 			content: "";

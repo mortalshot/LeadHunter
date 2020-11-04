@@ -11,7 +11,7 @@
 	vertical-align: middle;
 	width: 18px;
 	height: 18px;
-	background: url("../img/icons/call-up/chat.svg") center no-repeat;
+	background: url("../img/icons/call-up/chat.svg") center/cover no-repeat;
 }
 
 .call-close {
@@ -19,7 +19,7 @@
 	vertical-align: middle;
 	width: 16px;
 	height: 20px;
-	background: url("../img/icons/call-up/close.svg") center no-repeat;
+	background: url("../img/icons/call-up/close.svg") center/cover no-repeat;
 }
 
 .call-phone {
@@ -27,14 +27,14 @@
 	vertical-align: middle;
 	width: 18px;
 	height: 18px;
-	background: url("../img/icons/call-up/phone.svg") center no-repeat;
+	background: url("../img/icons/call-up/phone.svg") center/cover no-repeat;
 }
 
 .active {
 	.call-phone {
 		width: 16px;
 		height: 20px;
-		background: url("../img/icons/call-up/close.svg") center no-repeat;
+		background: url("../img/icons/call-up/close.svg") center/cover no-repeat;
 	}
 }
 
@@ -43,7 +43,7 @@
 	vertical-align: middle;
 	width: 18px;
 	height: 18px;
-	background: url("../img/icons/call-up/telegram.svg") center no-repeat;
+	background: url("../img/icons/call-up/telegram.svg") center/cover no-repeat;
 }
 
 .call-viber {
@@ -51,7 +51,7 @@
 	vertical-align: middle;
 	width: 16px;
 	height: 16px;
-	background: url("../img/icons/call-up/viber.svg") center no-repeat;
+	background: url("../img/icons/call-up/viber.svg") center/cover no-repeat;
 }
 
 .call-whatsapp {
@@ -59,7 +59,7 @@
 	vertical-align: middle;
 	width: 16px;
 	height: 16px;
-	background: url("../img/icons/call-up/whatsapp.svg") center no-repeat;
+	background: url("../img/icons/call-up/whatsapp.svg") center/cover no-repeat;
 }
 
 .icon-user-outlined {
@@ -68,4 +68,156 @@
 	width: 24px;
 	height: 24px;
 	background: url("../img/icons/user-outlined.svg") center no-repeat;
+}
+
+.icon-box {
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	background: url("../img/icons/advertiser/box.svg") center no-repeat;
+}
+
+.icon-settings-outline {
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	background: url("../img/icons/advertiser/settings-outline.svg") center no-repeat;
+}
+
+.icon-thumb-up {
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	background: url("../img/icons/advertiser/thumb-up.svg") center no-repeat;
+}
+
+.icon-trophy {
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	background: url("../img/icons/advertiser/trophy.svg") center no-repeat;
+}
+
+.icon-emoticon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	background: url("../img/icons/webmaster/emoticon.svg") center no-repeat;
+}
+
+.icon-trending-down {
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	background: url("../img/icons/webmaster/trending-down.svg") center no-repeat;
+}
+
+.icon-view-boxes {
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	background: url("../img/icons/webmaster/view-boxes.svg") center no-repeat;
+}
+
+.icon-wallet {
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	background: url("../img/icons/webmaster/wallet.svg") center no-repeat;
+}
+
+.icon-step1 {
+	display: inline-block;
+	vertical-align: middle;
+	width: 74px;
+	height: 86px;
+	background: url("../img/icons/steps/step1.svg") center/cover no-repeat;
+
+	@media screen and (max-width: 575px) {
+		width: 40px;
+		height: 52px;
+		background: url("../img/icons/steps/step1mob.svg") center/cover no-repeat;
+	}
+}
+
+.icon-step2 {
+	display: inline-block;
+	vertical-align: middle;
+	width: 74px;
+	height: 86px;
+	background: url("../img/icons/steps/step2.svg") center/cover no-repeat;
+
+	@media screen and (max-width: 575px) {
+		width: 40px;
+		height: 52px;
+		background: url("../img/icons/steps/step2mob.svg") center/cover no-repeat;
+	}
+}
+
+.icon-step3 {
+	display: inline-block;
+	vertical-align: middle;
+	width: 74px;
+	height: 86px;
+	background: url("../img/icons/steps/step3.svg") center/cover no-repeat;
+
+	@media screen and (max-width: 575px) {
+		width: 40px;
+		height: 52px;
+		background: url("../img/icons/steps/step3mob.svg") center/cover no-repeat;
+	}
+}
+
+.slider-arrow-right {
+	display: inline-block;
+	vertical-align: middle;
+	width: 43px;
+	height: 16px;
+	background: url("../img/icons/arrow-right.svg") center no-repeat;
+	transition: 0.3s ease all 0s;
+
+	@media screen and (min-width: 992px) {
+		&:hover {
+			background: url("../img/icons/arrow-right-hover.svg") center no-repeat;
+		}
+	}
+	@media screen and (max-width: 450px) {
+		width: 21px;
+		background: url("../img/icons/arrow-right-mob.svg") center no-repeat;
+	}
+}
+
+.arrow-news {
+	display: inline-block;
+	vertical-align: middle;
+	width: 43px;
+	height: 8px;
+	background: url("../img/icons/arrow-news.svg") center no-repeat;
+
+	@media screen and (max-width: 450px) {
+		width: 22px;
+		height: 9px;
+		background: url("../img/icons/arrow-news-mob.svg") center no-repeat;
+	}
+}
+
+.icon-kan {
+	display: inline-block;
+	vertical-align: middle;
+	width: 78px;
+	height: 26px;
+	background: url("../img/icons/kan.svg") center/cover no-repeat;
+
+	@media screen and (max-width: 767px) {
+		width: 63px;
+		height: 21px;
+	}
 }

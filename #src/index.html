@@ -32,72 +32,161 @@
                             </div>
                         </div>
                     </div>
-                    <div class="firstscreen__call call-up">
-                        <ul class="call-up__menu">
-                            <li class="call-up__item call-up__button"><a href="" class="call-up__link"><i
-                                        class="call-phone"></i></a></li>
-                            <ul class="call-up__submenu">
-                                <li class="call-up__item"><a href="" class="call-up__link"><i class="call-chat"></i></a>
-                                </li>
-                                <li class="call-up__item"><a href="" class="call-up__link"><i
-                                            class="call-whatsapp"></i></a>
-                                </li>
-                                <li class="call-up__item"><a href="" class="call-up__link"><i
-                                            class="call-viber"></i></a>
-                                </li>
-                                <li class="call-up__item"><a href="" class="call-up__link"><i
-                                            class="call-telegram"></i></a>
-                                </li>
-                            </ul>
-                        </ul>
+                    @@include('html-components/call-up.html')
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="features__container container">
+            <div class="features__desktop">
+                <div class="features__row row">
+                    <div class="features__card features__card--blue">
+                        <div class="features__card-wrapper">
+                            <h3 class="features__title title-h3">Для рекламодателя</h3>
+                            <div class="features__item">
+                                <div class="features__icon"><i class="icon-thumb-up"></i></div>
+                                <div class="features__text">Только качественные лиды</div>
+                            </div>
+                            <div class="features__item">
+                                <div class="features__icon"><i class="icon-settings-outline"></i></div>
+                                <div class="features__text">Собственный штат вебмастеров</div>
+                            </div>
+                            <div class="features__item">
+                                <div class="features__icon"><i class="icon-trophy"></i></div>
+                                <div class="features__text">Лучшие источники трафика</div>
+                            </div>
+                            <div class="features__item">
+                                <div class="features__icon"><i class="icon-box"></i></div>
+                                <div class="features__text">Работа “под ключ”</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features__card features__card--violet">
+                        <div class="features__card-wrapper">
+                            <h3 class="features__title title-h3">Для вебмастера</h3>
+                            <div class="features__item">
+                                <div class="features__icon"><i class="icon-view-boxes"></i></div>
+                                <div class="features__text">Большой выбор офферов от проверенных рекламодателей</div>
+                            </div>
+                            <div class="features__item">
+                                <div class="features__icon"><i class="icon-trending-down"></i></div>
+                                <div class="features__text">Сниженный холд</div>
+                            </div>
+                            <div class="features__item">
+                                <div class="features__icon"><i class="icon-trophy"></i></div>
+                                <div class="features__text">Высокие ставки по всем офферам</div>
+                            </div>
+                            <div class="features__item">
+                                <div class="features__icon"><i class="icon-emoticon"></i></div>
+                                <div class="features__text">Поддержка 24/7</div>
+                            </div>
+                            <div class="features__item">
+                                <div class="features__icon"><i class="icon-wallet"></i></div>
+                                <div class="features__text">Ежедневные выплаты</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="features__mobile">
+                <div id="featuresTabs" class="features__tabs tabs">
+                    <div class="features__triggers tabs__triggers tabs-triggers">
+                        <a href="#featuresTab-1"
+                            class="tabs-triggers__item features__trigger-item features__trigger-item--blue title-h3">Для
+                            рекламодателя</a>
+                        <a href="#featuresTab-2"
+                            class="tabs-triggers__item features__trigger-item features__trigger-item--violet title-h3">Для
+                            вебмастера</a>
+                    </div>
+                    <div class="tabs__content features__tabs-content tabs-content">
+                        <div id="featuresTab-1"
+                            class="features__content-item features__content-item--blue tabs-content__item">
+                            <div class="features__card-wrapper">
+                                <div class="features__item">
+                                    <div class="features__icon"><i class="icon-thumb-up"></i></div>
+                                    <div class="features__text">Только качественные лиды</div>
+                                </div>
+                                <div class="features__item">
+                                    <div class="features__icon"><i class="icon-settings-outline"></i></div>
+                                    <div class="features__text">Собственный штат вебмастеров</div>
+                                </div>
+                                <div class="features__item">
+                                    <div class="features__icon"><i class="icon-trophy"></i></div>
+                                    <div class="features__text">Лучшие источники трафика</div>
+                                </div>
+                                <div class="features__item">
+                                    <div class="features__icon"><i class="icon-box"></i></div>
+                                    <div class="features__text">Работа “под ключ”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="featuresTab-2"
+                            class="features__content-item features__content-item--violet tabs-content__item">
+                            <div class="features__card-wrapper">
+                                <div class="features__item">
+                                    <div class="features__icon"><i class="icon-view-boxes"></i></div>
+                                    <div class="features__text">Большой выбор офферов от проверенных рекламодателей
+                                    </div>
+                                </div>
+                                <div class="features__item">
+                                    <div class="features__icon"><i class="icon-trending-down"></i></div>
+                                    <div class="features__text">Сниженный холд</div>
+                                </div>
+                                <div class="features__item">
+                                    <div class="features__icon"><i class="icon-trophy"></i></div>
+                                    <div class="features__text">Высокие ставки по всем офферам</div>
+                                </div>
+                                <div class="features__item">
+                                    <div class="features__icon"><i class="icon-emoticon"></i></div>
+                                    <div class="features__text">Поддержка 24/7</div>
+                                </div>
+                                <div class="features__item">
+                                    <div class="features__icon"><i class="icon-wallet"></i></div>
+                                    <div class="features__text">Ежедневные выплаты</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <section class="steps">
+        <div class="steps__container container">
+            <h2 class="steps__title title-h2">Как работает маркетинг по модели CPA</h2>
+            <div class="steps__row row">
+                <div class="steps__step">
+                    <div class="steps__icon"><i class="icon-step1"></i></div>
+                    <div class="steps__text">Мы проводим анализ целевой аудитории и настраиваем рекламу</div>
+                </div>
+                <div class="steps__step">
+                    <div class="steps__icon"><i class="icon-step2"></i></div>
+                    <div class="steps__text">Всех клиентов мы направляем к вам</div>
+                </div>
+                <div class="steps__step">
+                    <div class="steps__icon"><i class="icon-step3"></i></div>
+                    <div class="steps__text">Рекламодатель платит после того, как получит нужное ему действие</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('html-components/advertisers.html')
+
+    @@include('html-components/news.html')
+
+    <section class="do-it">
+        <div class="do-it__container container">
+            <div class="do-it__content">
+                <h2 class="do-it__title title-h2">Начните зарабатывать больше вместе с нами прямо сейчас!</h2>
+                <a href="" class="do-it__button btn btn-blue">Зарегистрировтаься</a>
+            </div>
+        </div>
+    </section>
+    
     @@include('html-components/modals.html')
 </main>
 

@@ -18,6 +18,7 @@
 	// .call-up__link
 	&__link {
 		display: block;
+		
 		@media screen and (min-width: 767px) {
 			width: 54px;
 			height: 54px;
@@ -27,6 +28,7 @@
 			background-color: $White;
 			border-radius: 50%;
 		}
+		
 	}
 
 	// .call-up__submenu

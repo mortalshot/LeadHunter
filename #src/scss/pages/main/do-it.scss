@@ -1,0 +1,37 @@
+.do-it {
+	display: flex;
+	align-items: center;
+	background: $Violet url(../img/do-it/main-bg.png) no-repeat center/cover;
+	color: $White;
+
+	@media screen and (min-width: 768px) {
+		min-height: 660px;
+	}
+
+	// .do-it__container
+	&__container {
+		width: 100%;
+		max-width: 1005px;
+	}
+
+	&__content {
+		padding: 107px 0 101px;
+	}
+
+	// .do-it__title
+	&__title {
+		max-width: 455px;
+		margin-bottom: 56px;
+
+		@media screen and (max-width: 450px) {
+			margin-bottom: 39px;
+		}
+	}
+
+	// .do-it__button
+	&__button {
+		@media screen and (min-width: 450px) {
+			max-width: 244px;
+		}
+	}
+}

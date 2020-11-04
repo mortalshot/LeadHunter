@@ -1,0 +1,191 @@
+.news {
+	padding: 60px 0 53px;
+
+	@media screen and (max-width: 767px) {
+		padding: 40px 0;
+	}
+	@media screen and (max-width: 575px) {
+		padding: 36px 0;
+	}
+
+	// .news__container
+	&__container {
+		padding: 0 20px;
+
+		@media screen and (min-width: 992px) {
+			padding: 0 50px;
+		}
+	}
+
+	// .news__heading
+	&__heading {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 24px;
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 10px;
+		}
+		@media screen and (max-width: 575px) {
+			margin-bottom: 3px;
+		}
+	}
+
+	// .news__title
+	&__title {
+		padding-right: 20px;
+
+		@media screen and (max-width: $layoutDesktop + "px") {
+			font-size: calc(20px + 12 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+		}
+	}
+
+	// .news__btn-link
+	&__btn-link {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 18px;
+		color: $Blue2;
+		margin: 0 7px 0px 0px;
+		position: relative;
+		transition: 0.3s ease all 0s;
+
+		&::before {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: $Blue2;
+			position: absolute;
+			left: 50%;
+			bottom: -1px;
+			transform: translate(-50%, 0);
+		}
+
+		@media screen and (min-width: 992px) {
+			&:hover {
+				color: $Blue2Hover;
+			}
+		}
+		@media screen and (max-width: $layoutDesktop + "px") {
+			font-size: calc(14px + 2 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+			line-height: calc(18 / 16);
+		}
+		@media screen and (max-width: 575px) {
+			margin-right: 0;
+		}
+	}
+
+	// .news__cards
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -50px;
+		@media screen and (max-width: 1200px) {
+			margin: 0 -45px;
+		}
+		@media screen and (max-width: 1100px) {
+			margin: 0 -40px;
+		}
+		@media screen and (max-width: 991px) {
+			margin: 0 -20px;
+		}
+		@media screen and (max-width: 900px) {
+			margin: 0 -15px;
+		}
+		@media screen and (max-width: 900px) {
+			margin: 0 -10px;
+		}
+	}
+
+	// .news__card
+	&__card {
+		flex: 0 0 25%;
+		padding: 35px 50px;
+		@media screen and (max-width: 1200px) {
+			padding: 35px 45px;
+		}
+		@media screen and (max-width: 1100px) {
+			padding: 35px 40px;
+		}
+		@media screen and (max-width: 991px) {
+			padding: 30px 20px;
+		}
+		@media screen and (max-width: 900px) {
+			padding: 25px 15px;
+		}
+		@media screen and (max-width: 767px) {
+			padding: 25px 10px;
+		}
+	}
+
+	// .news__card-image
+	&__card-image {
+		position: relative;
+		margin-bottom: 18px;
+		padding-bottom: 81%;
+
+		@media screen and (max-width: 450px) {
+			padding-bottom: 91%;
+		}
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	// .news__card-date
+	&__card-date {
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 18px;
+
+		@media screen and (max-width: $layoutDesktop + "px") {
+			font-size: calc(10px + 4 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+			line-height: calc(18 / 14);
+		}
+		@media screen and (max-width: 450px) {
+			margin-bottom: 14px;
+		}
+	}
+
+	// .news__card-title
+	&__card-title {
+		margin-bottom: 18px;
+
+		@media screen and (max-width: 450px) {
+			margin-bottom: 16px;
+		}
+	}
+
+	// .news__card-link
+	&__card-link {
+		display: flex;
+		align-items: center;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 18px;
+		color: $Violet;
+		transition: 0.3s ease all 0s;
+
+		@media screen and (min-width: 992px) {
+			&:hover {
+				color: $VioletHover;
+			}
+		}
+
+		span {
+			margin-right: 17px;
+
+			@media screen and (max-width: 450px) {
+				margin-right: 16px;
+			}
+		}
+	}
+}

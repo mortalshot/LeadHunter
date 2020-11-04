@@ -8,6 +8,7 @@
     font-size: 18px;
     line-height: 20px;
     color: $White;
+    transition: 0.3s ease all 0s;
 
     @media screen and (max-width: $layoutDesktop + 'px') {
         font-size: calc(16px + 2 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
@@ -19,6 +20,13 @@
     
     &-blue {
         background-color: $Blue2;
+        
+        @media screen and (min-width: 992px) {
+            &:hover{ 
+                background-color: $Blue2Hover;
+            }
+        }
+
 
         &::before, &::after {
             content: '';
@@ -45,6 +53,13 @@
     
     &-violet {
         background-color: $Violet;
+
+        @media screen and (min-width: 992px) {
+            &:hover{ 
+                background-color: $VioletHover;
+            }
+        }
+
 
         &::before, &::after {
             content: '';

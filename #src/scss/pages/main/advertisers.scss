@@ -1,0 +1,65 @@
+.advertisers {
+	background-color: $Grey3;
+	padding: 60px 0 50px;
+
+	@media screen and (max-width: 767px) {
+		padding: 40px 0;
+	}
+	@media screen and (max-width: 575px) {
+		padding: 29px 0;
+	}
+	
+	// .advertisers__container
+	&__container {
+		max-width: 1240px;
+		position: relative;
+	}
+
+	// .advertisers__title
+	&__title {
+		margin-bottom: 60px;
+
+		@media screen and (max-width: $layoutDesktop + 'px') {
+			font-size: calc(20px + 12 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+		}
+		@media screen and (max-width: 767px) {
+			margin-bottom: 40px;
+		}
+		@media screen and (max-width: 575px) {
+			margin-bottom: 24px;
+		}
+		@media screen and (max-width: 400px) {
+			max-width: 160px;
+		}
+	}
+
+	// .advertisers__slider
+	&__slider {
+		position: initial;
+	}
+
+	// .advertisers__img
+	&__img {
+		display: flex;
+		justify-content: center;
+	}
+
+	.slick-arrow {
+		background-color: transparent;
+		position: absolute;
+		top: 0;
+	}
+
+	.slick-prev {
+		display: none !important;
+	}
+
+	.slick-next {
+		right: 3%;
+		top: 5%;
+
+		@media screen and (max-width: 450px) {
+			right: 6%;
+		}
+	}
+}
