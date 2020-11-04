@@ -1,0 +1,119 @@
+.cpa-content {
+	padding: 101px 0 80px;
+
+	@media screen and (max-width: 767px) {
+		padding: 50px 0;
+	}
+
+	// .cpa-content__container
+	&__container {
+		max-width: 1079px;
+	}
+
+	// .cpa-content__row
+	&__row {
+		justify-content: space-between;
+
+		@media screen and (max-width: 450px) {
+			flex-direction: column-reverse;
+		}
+	}
+
+	// .cpa-content__left
+	&__left {
+		flex: 1 1 auto;
+		padding-right: 20px;
+		max-width: 636px;
+
+		@media screen and (max-width: 450px) {
+			padding: 0px 0px 0 0px;
+		}
+	}
+
+	// .cpa-content__text
+	&__text {
+		margin-bottom: 56px;
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 30px;
+		}
+		@media screen and (max-width: 450px) {
+			margin-bottom: 20px;
+		}
+
+		p {
+			margin: 0 0 1.4em;
+			line-height: 21px;
+
+			@media screen and (max-width: $layoutDesktop + "px") {
+				font-size: calc(14px + 2 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+				line-height: calc(21 / 16);
+			}
+		}
+	}
+
+	// .cpa-content__btn
+	&__btn {
+		justify-content: center;
+		letter-spacing: 0.4px;
+
+		@media screen and (min-width: 450px) {
+			max-width: 291px;
+		}
+	}
+
+	// .cpa-content__right
+	&__right {
+		flex: 0 0 25.8%;
+
+		@media screen and (max-width: 575px) {
+			flex: 0 0 35%;
+		}
+		@media screen and (max-width: 450px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	// .cpa-content__title
+	&__title {
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 28px;
+		position: relative;
+		padding-top: 28px;
+
+		@media screen and (max-width: $layoutDesktop + "px") {
+			font-size: calc(16px + 6 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+			line-height: calc(28 / 22);
+		}
+		@media screen and (max-width: 767px) {
+			padding-top: 20px;
+		}
+		@media screen and (max-width: 450px) {
+			padding-top: 10px;
+		}
+
+		&::before {
+			content: "";
+			display: block;
+			height: 4px;
+			width: 100%;
+			max-width: 82px;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+
+	&--blue {
+		.cpa-content__title::before {
+			background-color: $Blue2;
+		}
+	}
+
+	&--violet {
+		.cpa-content__title::before {
+			background-color: $Violet;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.advertiser {
+	.main__heading {
+		margin-bottom: 88px;
+	}
+
+	// .advertiser__subtitle
+	&__subtitle {
+		color: $Cyan;
+	}
+
+	// .advertiser__features
+	&__features {
+		display: flex;
+		flex-wrap: wrap;
+		color: $White;
+		max-width: 76.3%;
+
+		.features__item {
+			flex: 0 0 50%;
+			margin: 0;
+			padding: 29px 4px;
+
+			@media screen and (max-width: 767px) {
+				padding: 15px 4px;
+			}
+			@media screen and (max-width: 575px) {
+				flex: 0 0 100%;
+				padding: 10px 4px;
+			}
+		}
+	}
+}

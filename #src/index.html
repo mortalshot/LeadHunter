@@ -1,5 +1,5 @@
 @@include('html-components/_header.html', {
-"title": "Page name"
+"title": "Home page"
 })
 
 <main class="site__main">
@@ -20,14 +20,14 @@
                                     эффективности
                                     рекламных кампаний?</div>
                                 <div class="main-actions__btn">
-                                    <a href="" class="btn btn-blue">Рекламодателям</a>
+                                    <a href="advertiser.html" class="btn btn-blue">Рекламодателям</a>
                                 </div>
                             </div>
                             <div class="main-actions__item">
                                 <div class="main-actions__text">Вы вебмастер и ищете выгодные партнерские программы для
                                     заработка?</div>
                                 <div class="main-actions__btn">
-                                    <a href="" class="btn btn-violet">Вебмастерам</a>
+                                    <a href="webmaster.html" class="btn btn-violet">Вебмастерам</a>
                                 </div>
                             </div>
                         </div>
@@ -178,15 +178,8 @@
 
     @@include('html-components/news.html')
 
-    <section class="do-it">
-        <div class="do-it__container container">
-            <div class="do-it__content">
-                <h2 class="do-it__title title-h2">Начните зарабатывать больше вместе с нами прямо сейчас!</h2>
-                <a href="" class="do-it__button btn btn-blue">Зарегистрировтаься</a>
-            </div>
-        </div>
-    </section>
-    
+    @@include('html-components/do-it.html')
+
     @@include('html-components/modals.html')
 </main>
 

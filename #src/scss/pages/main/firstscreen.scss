@@ -1,5 +1,12 @@
 .firstscreen {
 	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 50px 0;
+
+	@media screen and (min-width: 767px) {
+		min-height: 624px;
+	}
 
 	// .firstscreen__row
 	&__row {
@@ -16,6 +23,54 @@
 
 		@media screen and (max-width: 767px) {
 			display: none;
+		}
+	}
+
+	&--advertiser {
+		background: $Blue2 url(../img/firstscreen/advertiser-bg.png) no-repeat right/cover;
+
+		&::before {
+			content: '';
+			display: block;
+			width: 307px;
+			height: 193px;
+			background: url(../img/firstscreen/advertiser-coub.svg) no-repeat center/cover;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+
+			@media screen and (max-width: 991px) {
+				width: 200px;
+				height: 150px;
+			}
+			@media screen and (max-width: 767px) {
+				width: 150px;
+				height: 100px;
+			}
+		}
+	}
+
+	&--webmaster {
+		background: $Violet url(../img/firstscreen/webmaster-bg.png) no-repeat right/cover;
+
+		&::before {
+			content: '';
+			display: block;
+			width: 307px;
+			height: 193px;
+			background: url(../img/firstscreen/advertiser-coub.svg) no-repeat center/cover;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+
+			@media screen and (max-width: 991px) {
+				width: 200px;
+				height: 150px;
+			}
+			@media screen and (max-width: 767px) {
+				width: 150px;
+				height: 100px;
+			}
 		}
 	}
 }

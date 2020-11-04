@@ -1,12 +1,6 @@
 .main {
-	background: url(../img/main/firstscreen/bg.png) no-repeat center/cover;
-	display: flex;
-	align-items: center;
-	padding: 50px 0;
+	background: url(../img/firstscreen/main-bg.png) no-repeat center/cover;
 
-	@media screen and (min-width: 767px) {
-		min-height: 624px;
-	}
 	@media screen and (max-width: 575px) {
 		padding: 43px 0 22px;
 	}
@@ -18,7 +12,7 @@
 
 	// .main__container
 	&__container {
-		max-width: 1032px;
+		max-width: 1012px;
 		margin: 0 auto;
 		padding: 0 20px;
 	}
