@@ -68,7 +68,17 @@
 
     @@include('html-components/advertisers.html')
 
-    @@include('html-components/news.html')
+    <section class="news">
+        <div class="news__container container-fluid">
+            <div class="news__heading">
+                <h2 class="news__title title-h2">Новости</h2>
+                <a href="" class="news__btn-link">Все новости</a>
+            </div>
+            <div class="news__cards news__latest">
+                @@include('html-components/news.html')
+            </div>
+        </div>
+    </section>
 
     @@include('html-components/do-it.html')
 

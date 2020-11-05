@@ -19,7 +19,7 @@
 	// .firstscreen__call
 	&__call {
 		position: absolute;
-		top: 70px;
+		top: -56px;
 		right: 25px;
 
 		@media screen and (max-width: 767px) {
@@ -83,9 +83,17 @@
 		.main__heading {
 			margin: 0;
 		}
+
+		.firstscreen__call {
+			top: -116px;
+		}
 	}
 
 	&--faq {
-		background: $Blue2 url(../img/firstscreen/faq-bg.png) no-repeat right/cover;
+		background: $Violet url(../img/firstscreen/faq-bg.png) no-repeat right/cover;
+	}
+
+	&--news {
+		background: $Blue2 url(../img/firstscreen/news-bg.png) no-repeat right/cover;
 	}
 }

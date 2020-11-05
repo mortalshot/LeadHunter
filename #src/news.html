@@ -1,0 +1,42 @@
+@@include('html-components/_header.html', {
+"title": "News"
+})
+
+<main class="site__main">
+    <section class="firstscreen firstscreen--advertiser firstscreen--small firstscreen--news">
+        <div class="main__container-fluid container-fluid">
+            <div class="main__container">
+                <div class="firstscreen__row row">
+                    <div class="firstscreen__content">
+                        <div class="main__heading">
+                            <h1 class="main__title title-h1">Новости</h1>
+                        </div>
+                    </div>
+                    @@include('html-components/call-up.html')
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="news__container container-fluid">
+            <div class="news__cards">
+                @@include('html-components/news.html')
+                @@include('html-components/news.html')
+                @@include('html-components/news.html')
+            </div>
+            <nav class="news__pagination pagination">
+                <ul class="pagination__list">
+                    <li class="pagination__item"><a href="" class="pagination__link current">1</a></li>
+                    <li class="pagination__item"><a href="" class="pagination__link">2</a></li>
+                    <li class="pagination__item"><a href="" class="pagination__link">3</a></li>
+                    <li class="pagination__item"><a href="" class="pagination__link">...</a></li>
+                    <li class="pagination__item"><a href="" class="pagination__link">16</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    @@include('html-components/modals.html')
+</main>
+
+@@include('html-components/_footer.html')
