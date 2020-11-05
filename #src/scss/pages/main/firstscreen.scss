@@ -31,7 +31,7 @@
 		background: $Blue2 url(../img/firstscreen/advertiser-bg.png) no-repeat right/cover;
 
 		&::before {
-			content: '';
+			content: "";
 			display: block;
 			width: 307px;
 			height: 193px;
@@ -55,7 +55,7 @@
 		background: $Violet url(../img/firstscreen/webmaster-bg.png) no-repeat right/cover;
 
 		&::before {
-			content: '';
+			content: "";
 			display: block;
 			width: 307px;
 			height: 193px;
@@ -98,6 +98,10 @@
 	}
 
 	&--article {
-		background: $Blue2  url(../img/firstscreen/article-bg.png) no-repeat left;
+		background: $Blue2 url(../img/firstscreen/article-bg.png) no-repeat left;
+	}
+
+	&--contact {
+		background: $Blue2 url(../img/firstscreen/contact-bg.png) no-repeat right;
 	}
 }

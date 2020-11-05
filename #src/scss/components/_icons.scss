@@ -229,3 +229,27 @@
 	height: 24px;
 	background: url("../img/icons/back.svg") center/cover no-repeat;
 }
+
+.icon-phone {
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 17px;
+	background: url("../img/icons/contact/phone.svg") center/cover no-repeat;
+}
+
+.icon-mail {
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 17px;
+	background: url("../img/icons/contact/email.svg") center/cover no-repeat;
+}
+
+.icon-map {
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 17px;
+	background: url("../img/icons/contact/map.svg") center/cover no-repeat;
+}
