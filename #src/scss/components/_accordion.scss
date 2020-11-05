@@ -1,20 +1,35 @@
 .accordion {
+    &__item {
+        border-bottom: 1px solid $Lgrey;
+
+        &:first-child {
+            border-top: 1px solid $Lgrey;
+        }
+    }
+
     // .accordion__title
     &__title {
-        padding: 20px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        padding: 26px 33px 26px 8px;
         position: relative;
         cursor: pointer;
 
-        @media screen and (max-width: 450px) {
-            padding: 20px 30px 20px 0;
+        @media screen and (max-width: $layoutDesktop + 'px') {
+            font-size: calc(14px + 2 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+            line-height: calc(21 / 16);
+        }
+        @media screen and (max-width: 575px) {
+            padding: 15px 33px 15px 8px;
         }
 
         &::before,
         &::after {
             content: "";
-            width: 9px;
-            height: 1px;
-            background-color: #fff;
+            width: 11px;
+            height: 2px;
+            background-color: $Grey2;
             position: absolute;
             top: 50%;
             transform: translate(0, -50%);
@@ -23,12 +38,12 @@
 
         &::before {
             transform: translate(0, -50%) rotate(-45deg);
-            right: 0;
+            right: 2px;
         }
 
         &::after {
             transform: translate(0, -50%) rotate(45deg);
-            right: 6px;
+            right: 9px;
         }
 
         &.active {
@@ -43,11 +58,17 @@
 
     // .accordion__text
     &__text {
-        padding: 0px 20px 20px;
+        padding: 0px 33px 26px 6px;
         display: none;
+        font-size: 16px;
+        line-height: 21px;
 
-        @media screen and (max-width: 450px) {
-            padding: 0px 30px 20px 0;
+        @media screen and (max-width: $layoutDesktop + 'px') {
+            font-size: calc(14px + 2 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+            line-height: calc(21 / 16);
+        }
+        @media screen and (max-width: 575px) {
+            padding: 0px 33px 15px 6px;
         }
     }
 }

@@ -285,6 +285,14 @@ img {
   height: auto;
 }
 
+p {
+  margin: 0 0 1.4em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -859,6 +867,72 @@ img {
   line-height: 110%;
 }
 
+.accordion__item {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.accordion__item:first-child {
+  border-top: 1px solid #e7e7e7;
+}
+
+.accordion__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 26px 33px 26px 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion__title::before,
+.accordion__title::after {
+  content: "";
+  width: 11px;
+  height: 2px;
+  background-color: #c4c4c4;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-transition: 0.3s ease all 0s;
+  -o-transition: 0.3s ease all 0s;
+  transition: 0.3s ease all 0s;
+}
+
+.accordion__title::before {
+  -webkit-transform: translate(0, -50%) rotate(-45deg);
+      -ms-transform: translate(0, -50%) rotate(-45deg);
+          transform: translate(0, -50%) rotate(-45deg);
+  right: 2px;
+}
+
+.accordion__title::after {
+  -webkit-transform: translate(0, -50%) rotate(45deg);
+      -ms-transform: translate(0, -50%) rotate(45deg);
+          transform: translate(0, -50%) rotate(45deg);
+  right: 9px;
+}
+
+.accordion__title.active::before {
+  -webkit-transform: translate(0, -50%) rotate(45deg);
+      -ms-transform: translate(0, -50%) rotate(45deg);
+          transform: translate(0, -50%) rotate(45deg);
+}
+
+.accordion__title.active::after {
+  -webkit-transform: translate(0, -50%) rotate(-45deg);
+      -ms-transform: translate(0, -50%) rotate(-45deg);
+          transform: translate(0, -50%) rotate(-45deg);
+}
+
+.accordion__text {
+  padding: 0px 33px 26px 6px;
+  display: none;
+  font-size: 16px;
+  line-height: 21px;
+}
+
 .tabs-triggers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1144,7 +1218,8 @@ img {
 
 .firstscreen__call {
   position: absolute;
-  right: 16px;
+  top: 70px;
+  right: 25px;
 }
 
 .no-webp .firstscreen--advertiser {
@@ -1175,6 +1250,13 @@ img {
   right: 0;
 }
 
+.firstscreen--small .main__heading {
+  margin: 0;
+}
+
+.no-webp .firstscreen--faq {
+  background: #63b5b6 url(../img/firstscreen/faq-bg.png) no-repeat right/cover; }
+
 .call-up__item {
   list-style-type: none;
 }
@@ -1191,7 +1273,6 @@ img {
   background: url(../img/firstscreen/main-bg.png) no-repeat center/cover; }
 
 .main__container-fluid {
-  position: relative;
   width: 100%;
 }
 
@@ -1716,6 +1797,14 @@ img {
   background-color: #7c7093;
 }
 
+.faq {
+  padding: 40px 0 50px;
+}
+
+.faq__container {
+  max-width: 1240px;
+}
+
 @media screen and (min-width: 450px) {
   .do-it__button {
     max-width: 244px;
@@ -1761,6 +1850,10 @@ img {
     min-height: 624px;
   }
 
+  .firstscreen--small {
+    min-height: 370px;
+  }
+
   .call-up__item {
     margin-bottom: 8px;
   }
@@ -1779,6 +1872,8 @@ img {
             justify-content: center;
     background-color: #fff;
     border-radius: 50%;
+    -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -1878,6 +1973,16 @@ img {
 
   .title-h4 {
     font-size: calc(14px + 2 * ((100vw - 320px) / (1280 - 320)));
+  }
+
+  .accordion__title {
+    font-size: calc(14px + 2 * ((100vw - 320px) / (1280 - 320)));
+    line-height: calc(21 / 16);
+  }
+
+  .accordion__text {
+    font-size: calc(14px + 2 * ((100vw - 320px) / (1280 - 320)));
+    line-height: calc(21 / 16);
   }
 
   .popup--menu .menu-popup__logo .logo__top {
@@ -2354,6 +2459,14 @@ img {
     background: url("../img/icons/steps/step3mob.svg") center/cover no-repeat;
   }
 
+  .accordion__title {
+    padding: 15px 33px 15px 8px;
+  }
+
+  .accordion__text {
+    padding: 0px 33px 15px 6px;
+  }
+
   .footer {
     padding: 21px 0;
   }
@@ -2499,6 +2612,10 @@ img {
         -ms-flex: 0 0 35%;
             flex: 0 0 35%;
   }
+
+  .faq {
+    padding-bottom: 25px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -2611,6 +2728,8 @@ img {
 .webp .firstscreen--advertiser { background: #63b5b6 url(../img/firstscreen/advertiser-bg.webp) no-repeat right/cover; }
 
 .webp .firstscreen--webmaster { background: #7c7093 url(../img/firstscreen/webmaster-bg.webp) no-repeat right/cover; }
+
+.webp .firstscreen--faq { background: #63b5b6 url(../img/firstscreen/faq-bg.webp) no-repeat right/cover; }
 
 .webp .main { background: url(../img/firstscreen/main-bg.webp) no-repeat center/cover; }
 

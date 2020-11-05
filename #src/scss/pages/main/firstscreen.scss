@@ -19,7 +19,8 @@
 	// .firstscreen__call
 	&__call {
 		position: absolute;
-		right: 16px;
+		top: 70px;
+		right: 25px;
 
 		@media screen and (max-width: 767px) {
 			display: none;
@@ -72,5 +73,19 @@
 				height: 100px;
 			}
 		}
+	}
+
+	&--small {
+		@media screen and (min-width: 767px) {
+			min-height: 370px;
+		}
+
+		.main__heading {
+			margin: 0;
+		}
+	}
+
+	&--faq {
+		background: $Blue2 url(../img/firstscreen/faq-bg.png) no-repeat right/cover;
 	}
 }

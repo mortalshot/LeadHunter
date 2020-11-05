@@ -1,0 +1,12 @@
+.faq {
+	padding: 40px 0 50px;
+
+	@media screen and (max-width: 575px) {
+		padding-bottom: 25px;
+	}
+
+	// .faq__container
+	&__container {
+		max-width: 1240px;
+	}
+}

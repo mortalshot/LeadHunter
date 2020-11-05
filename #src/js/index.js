@@ -8,3 +8,4 @@
 @@include('components/call-up.js')
 @@include('components/tabs.js')
 @@include('components/slider.js')
+@@include('components/accordion.js')
