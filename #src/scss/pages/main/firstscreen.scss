@@ -85,7 +85,7 @@
 		}
 
 		.firstscreen__call {
-			top: -116px;
+			top: -90px;
 		}
 	}
 
@@ -95,5 +95,9 @@
 
 	&--news {
 		background: $Blue2 url(../img/firstscreen/news-bg.png) no-repeat right/cover;
+	}
+
+	&--article {
+		background: $Blue2  url(../img/firstscreen/article-bg.png) no-repeat left;
 	}
 }

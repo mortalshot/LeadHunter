@@ -196,4 +196,15 @@
 			}
 		}
 	}
+
+	&--another {
+		padding: 60px 0 20px;
+
+		@media screen and (max-width: 767px) {
+			padding-bottom: 0;
+		}
+		@media screen and (max-width: 575px) {
+			padding-bottom: 0;
+		}
+	}
 }
