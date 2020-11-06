@@ -1,0 +1,26 @@
+@@include('html-components/_header.html', {
+"title": "Contact"
+})
+
+<main class="site__main">
+    <section class="firstscreen firstscreen--full firstscreen--success">
+        <div class="main__container">
+            <div class="firstscreen__row row">
+                <div class="firstscreen__content">
+                    <div class="pulse">
+                        <div class="pulse__inner">
+                            <i class="icon-check"></i>
+                        </div>
+                    </div>
+                    <h1 class="main__title title-h3">Ваша заявка успешно отправлена</h1>
+                    <a href="/" class="success__btn btn btn-blue">На главную</a>
+                </div>
+                @@include('html-components/call-up.html')
+            </div>
+        </div>
+    </section>
+
+    @@include('html-components/modals.html')
+</main>
+
+@@include('html-components/_footer.html')

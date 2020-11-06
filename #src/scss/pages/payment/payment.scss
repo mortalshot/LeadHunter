@@ -1,0 +1,63 @@
+.payment {
+	padding: 24px 0;
+	background: $Grey3;
+
+	// .payment__container
+	&__container {
+		max-width: 1236px;
+	}
+
+	// .payment__row
+	&__row {
+		align-items: center;
+
+		@media screen and (max-width: 575px) {
+			overflow-y: auto;
+		}
+	}
+
+	// .payment__title
+	&__title {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 26px;
+		padding-right: 46px;
+		border-right: 1px solid $Grey;
+
+		@media screen and (min-width: 992px) {
+			margin-right: 19px;
+		}
+		@media screen and (max-width: $layoutDesktop + 'px') {
+			font-size: calc(16px + 4 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+			line-height: calc(26 / 20);
+		}
+		@media screen and (max-width: 991px) {
+			padding-right: 20px;
+		}
+		@media screen and (max-width: 767px) {
+			padding-right: 10px;
+			flex: 0 0 120px;
+		}
+		@media screen and (max-width: 575px) {
+			flex: 0 0 80px;
+		}
+	}
+
+	// .payment__image
+	&__image {
+		padding: 0 26px;
+
+
+		@media screen and (max-width: 991px) {
+			padding: 0 10px;
+		}
+		@media screen and (max-width: 767px) {
+			padding: 0 5px;
+		}
+		@media screen and (max-width: 575px) {
+			flex: 0 0 120px;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

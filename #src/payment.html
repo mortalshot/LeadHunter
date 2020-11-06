@@ -1,0 +1,78 @@
+@@include('html-components/_header.html', {
+"title": "Faq"
+})
+
+<main class="site__main">
+    <section class="firstscreen firstscreen--advertiser firstscreen--small firstscreen--payment">
+        <div class="main__container-fluid container-fluid">
+            <div class="main__container">
+                <div class="firstscreen__row row">
+                    <div class="firstscreen__content">
+                        <div class="main__heading">
+                            <h1 class="main__title title-h1">Вывод денежных средств</h1>
+                        </div>
+                    </div>
+                    @@include('html-components/call-up.html')
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment">
+        <div class="payment__container container">
+            <div class="payment__row row">
+                <h2 class="payment__title">Платёжные системы</h2>
+                <div class="payment__image"> <img src="img/payment/webmoney.svg" alt=""> </div>
+                <div class="payment__image"> <img src="img/payment/Visa.svg" alt=""> </div>
+                <div class="payment__image"> <img src="img/payment/Qiwi.svg" alt=""> </div>
+                <div class="payment__image"> <img src="img/payment/Mastercard.svg" alt=""> </div>
+                <div class="payment__image"> <img src="img/payment/YandexMoney.svg" alt=""> </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-steps">
+        <div class="payment-steps__container container">
+            <h2 class="payment-steps__title title-h2">Как это работает </h2>
+            <div class="payment-steps__list">
+                <div class="payment-steps__item">
+                    <div class="payment-steps__image">
+                        <img src="img/icons/steps/step1.svg" alt="">
+                    </div>
+                    <div class="payment-steps__content">
+                        <div class="payment-steps__content-title">За какие действия мы платим</div>
+                        <div class="payment-steps__content-text">Типичные целевые действия — регистрация, покупка товара,
+                            заполнение форм и заявок, достижение уровней в игре, просмотр роликов, установка программ и
+                            другое. Тип и оплату за целевое действие устанавливает рекламодатель. А мы платим, когда
+                            пользователи совершают эти действия на сайте или в приложении рекламодателя.</div>
+                    </div>
+                </div>
+                <div class="payment-steps__item">
+                    <div class="payment-steps__image">
+                        <img src="img/icons/steps/step2.svg" alt="">
+                    </div>
+                    <div class="payment-steps__content">
+                        <div class="payment-steps__content-title">В какой валюте производится выплата</div>
+                        <div class="payment-steps__content-text">Мы выплачиваем деньги в рублях и долларах. Если рекламодатель
+                            производит расчеты в другой валюте, то мы конвертируем зачисляемые на баланс деньги по курсу
+                            ЦБ РФ на момент совершения целевого действия.</div>
+                    </div>
+                </div>
+                <div class="payment-steps__item">
+                    <div class="payment-steps__image">
+                        <img src="img/icons/steps/step3.svg" alt="">
+                    </div>
+                    <div class="payment-steps__content">
+                        <div class="payment-steps__content-title">Как часто производятся выплаты</div>
+                        <div class="payment-steps__content-text">Мы выплачиваем деньги ежедневно по будним дням. </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="payment-steps__btn btn btn-blue">Зарегистрироваться</a>
+        </div>
+    </section>
+
+    @@include('html-components/modals.html')
+</main>
+
+@@include('html-components/_footer.html')

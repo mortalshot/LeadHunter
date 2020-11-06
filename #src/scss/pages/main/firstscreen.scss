@@ -76,6 +76,8 @@
 	}
 
 	&--small {
+		min-height: 370px;
+		
 		@media screen and (min-width: 767px) {
 			min-height: 370px;
 		}
@@ -103,5 +105,109 @@
 
 	&--contact {
 		background: $Blue2 url(../img/firstscreen/contact-bg.png) no-repeat right;
+	}
+
+	&--full {
+		min-height: calc(100vh - #{$size-header-height});
+
+		@media screen and (min-width: 768px) {
+			min-height: calc(100vh - #{$size-header-height});
+		}
+		@media screen and (max-width: 767px) {
+			min-height: calc(100vh - #{$size-header-height-mobile});
+		}
+	}
+
+	&--success {
+		background: $Violet url(../img/firstscreen/success-bg.png) no-repeat center bottom;
+
+		.firstscreen__content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.pulse {
+			display: block;
+			width: 180px;
+			height: 180px;
+			border-radius: 50%;
+			position: relative;
+			margin-bottom: 55px;
+
+			&__inner {
+				width: 72px;
+				height: 72px;
+				border-radius: 50%;
+				background-color: $Blue2;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				animation: radial-inner 2s infinite;
+
+				&::before {
+					content: "";
+					width: 72px;
+					height: 72px;
+					border-radius: 50%;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					animation: radial-outer 2s infinite 1s;
+				}
+			}
+		}
+
+		.main__title {
+			margin-bottom: 61px;
+
+			@media screen and (max-width: 991px) {
+				margin-bottom: 50px;
+			}
+			@media screen and (max-width: 767px) {
+				margin-bottom: 30px;
+			}
+			@media screen and (max-width: 575px) {
+				margin-bottom: 20px;
+			}
+		}
+
+		.success__btn {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			
+			@media screen and (min-width: 450px) {
+				max-width: 249px;
+			}
+		}
+	}
+
+	&--payment {
+		background: $Violet url(../img/firstscreen/payment-bg.png) no-repeat right;
+	}
+}
+
+@keyframes radial-inner {
+	0% {
+		box-shadow: 0 0 0 0px rgba(#a7d1d1, 0.5);
+	}
+	100% {
+		box-shadow: 0 0 0 80px rgba(#a7d1d1, 0);
+	}
+}
+
+@keyframes radial-outer {
+	0% {
+		box-shadow: 0 0 0 0px rgba(#96c2c2, 0.5);
+	}
+	100% {
+		box-shadow: 0 0 0 80px rgba(#96c2c2, 0);
 	}
 }
