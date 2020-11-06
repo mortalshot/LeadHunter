@@ -164,4 +164,34 @@
             }
         }
     }
+
+    &--request {
+        z-index: 51;
+
+        .popup__content {
+            background-color: $White;
+            color: $Black;
+            max-width: 510px;
+            padding: 61px 54px 64px;
+
+            @media screen and (max-width: 450px) {
+                padding: 25px 20px;
+            }
+        }
+        .popup__close {
+            top: 17px;
+            right: 16px;
+            z-index: 1;
+        }
+
+        .form {
+            &__title {
+                margin-bottom: 41px;
+
+                @media screen and (max-width: 450px) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
 }

@@ -1,0 +1,22 @@
+@@include('html-components/_header.html', {
+"title": "Page not found"
+})
+
+<main class="site__main">
+    <section class="firstscreen firstscreen--full firstscreen--error">
+        <div class="main__container">
+            <div class="firstscreen__row row">
+                <div class="firstscreen__content">
+                    <img src="img/404.svg" alt="">
+                    <h1 class="main__title title-h1">Упс, этой страницы не существует</h1>
+                    <h2 class="main__subtitle">Страница, на которую вы зашли, не зарегистрирована или её не существет</h2>
+                    <a href="/" class="error__btn btn btn-violet">Назад</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('html-components/modals.html')
+</main>
+
+@@include('html-components/_footer.html')

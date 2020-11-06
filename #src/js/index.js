@@ -9,3 +9,4 @@
 @@include('components/tabs.js')
 @@include('components/slider.js')
 @@include('components/accordion.js')
+@@include('components/select.js')

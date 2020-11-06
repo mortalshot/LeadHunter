@@ -192,6 +192,48 @@
 	&--payment {
 		background: $Violet url(../img/firstscreen/payment-bg.png) no-repeat right;
 	}
+
+	&--error {
+		.firstscreen__content {
+			max-width: 548px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+
+		img {
+			margin-bottom: 12px;
+		}
+
+		.main__title {
+			color: $Black;
+			line-height: 46px;
+			margin-bottom: 24px;
+			text-align: center;
+
+			@media screen and (max-width: $layoutDesktop + 'px') {
+				line-height: calc(46 / 42);
+			}
+		}
+
+		.main__subtitle {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 21px;
+			color: $Grey;
+			text-align: center;
+			margin-bottom: 48px;
+			max-width: 100%;
+		}
+
+		.error__btn {
+			width: 100%;
+			max-width: 174px;
+			justify-content: center;
+			margin: 0 auto;
+		}
+	}
 }
 
 @keyframes radial-inner {

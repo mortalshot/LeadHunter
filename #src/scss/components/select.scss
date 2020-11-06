@@ -7,27 +7,40 @@
 
     &__title {
         color: #000;
-        border: 1px solid #d9d9d9;
-        background-color: #fff;
+        background-color: $Lgrey;
         cursor: pointer;
-        border-radius: 5px;
+        border-radius: 2px;
     }
 
     &__value {
         display: flex;
-        font-size: 16px;
-        height: 50px;
-        padding: 0px 20px;
         align-items: center;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-        &::before {
+        font-size: 14px;
+        line-height: 18px;
+        height: 50px;
+        padding: 0px 16px;
+        position: relative;
+
+        &::before,
+        &::after {
             content: "";
-            display: inline-block;
-            transition: all 0.3s ease 0s;
-            width: 11px;
-            height: 7px;
-            background: url("../img/select.svg") center / 100% no-repeat;
+            width: 8px;
+            height: 2px;
+            background-color: #202941;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            transition: 0.3s ease all 0s;
+        }
+
+        &::before {
+            transform: translate(0, -50%) rotate(-45deg);
+            right: 21px;
+        }
+
+        &::after {
+            transform: translate(0, -50%) rotate(45deg);
+            right: 26px;
         }
 
         span {
@@ -44,28 +57,30 @@
         display: none;
         position: absolute;
         top: 49px;
-        border-radius: 0 0 4px 4px;
+        border-radius: 0 0 2px 2px;
         min-width: 100%;
         left: 0;
-        background-color: #fff;
-        border-top: 0;
-        border: 1px solid #d9d9d9;
-        border-top: 0;
-        font-size: 16px;
+        background-color: $Lgrey;
+        font-size: 14px;
         padding: 0px 0px 5px 0px;
     }
 
     &__option {
         cursor: pointer;
-        padding: 10px 20px;
+        padding: 10px 16px;
         margin: 0px 0px 0px 0px;
     }
 
     &._active {
         z-index: 5;
 
-        .select__value::before {
-            transform: rotate(-180deg);
+        .select__value {
+            &::before {
+                transform: translate(0, -50%) rotate(45deg);
+            }
+            &::after {
+                transform: translate(0, -50%) rotate(-45deg);
+            }
         }
 
         .select__options {
