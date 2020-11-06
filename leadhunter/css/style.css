@@ -1887,6 +1887,17 @@ textarea.form__input {
 .no-webp .main {
   background: url(../img/firstscreen/main-bg.png) no-repeat center/cover; }
 
+.main::before {
+  content: "";
+  display: block;
+  width: 222px;
+  height: 239px;
+  background: url(../img/firstscreen/main-coub.svg) no-repeat center/cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .main__container-fluid {
   width: 100%;
   position: relative;
@@ -2180,6 +2191,29 @@ textarea.form__input {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
+  position: relative;
+}
+
+.do-it::before {
+  content: "";
+  display: block;
+  width: 82px;
+  height: 164px;
+  background: url(../img/do-it/coub-1.svg) no-repeat center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.do-it::after {
+  content: "";
+  display: block;
+  width: 123px;
+  height: 82px;
+  background: url(../img/do-it/coub-2.svg) no-repeat center/cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .do-it__container {
@@ -3162,6 +3196,11 @@ textarea.form__input {
     margin-bottom: 50px;
   }
 
+  .main::before {
+    width: 178px;
+    height: 191px;
+  }
+
   .features__card::before {
     width: 100px;
     height: 100px;
@@ -3473,6 +3512,11 @@ textarea.form__input {
     padding: 16px;
   }
 
+  .main::before {
+    width: 125px;
+    height: 134px;
+  }
+
   .main__heading {
     margin-bottom: 116px;
   }
@@ -3526,6 +3570,16 @@ textarea.form__input {
 
   .advertisers__title {
     margin-bottom: 40px;
+  }
+
+  .do-it::before {
+    width: 49px;
+    height: 98px;
+  }
+
+  .do-it::after {
+    width: 74px;
+    height: 49px;
   }
 
   .news {

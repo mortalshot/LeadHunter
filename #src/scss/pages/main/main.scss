@@ -1,8 +1,28 @@
 .main {
 	background: url(../img/firstscreen/main-bg.png) no-repeat center/cover;
-
+	
 	@media screen and (max-width: 575px) {
 		padding: 43px 0 22px;
+	}
+	
+	&::before {
+		content: "";
+		display: block;
+		width: 222px;
+		height: 239px;
+		background: url(../img/firstscreen/main-coub.svg) no-repeat center/cover;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		@media screen and (max-width: 991px) {
+			width: 178px;
+			height: 191px;
+		}
+		@media screen and (max-width: 767px) {
+			width: 125px;
+			height: 134px;
+		}
 	}
 
 	&__container-fluid {

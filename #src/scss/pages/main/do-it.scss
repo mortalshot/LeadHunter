@@ -3,6 +3,39 @@
 	align-items: center;
 	background: $Violet url(../img/do-it/main-bg.png) no-repeat center/cover;
 	color: $White;
+	position: relative;
+
+	&::before {
+		content: "";
+		display: block;
+		width: 82px;
+		height: 164px;
+		background: url(../img/do-it/coub-1.svg) no-repeat center/cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		@media screen and (max-width: 767px) {
+			width: 49px;
+			height: 98px;
+		}
+	}
+
+	&::after {
+		content: "";
+		display: block;
+		width: 123px;
+		height: 82px;
+		background: url(../img/do-it/coub-2.svg) no-repeat center/cover;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		@media screen and (max-width: 767px) {
+			width: 74px;
+			height: 49px;
+		}
+	}
 
 	@media screen and (min-width: 768px) {
 		min-height: 660px;
